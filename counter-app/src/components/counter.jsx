@@ -2,16 +2,25 @@ import React, { Component, createContext } from 'react';
 
 class Counter extends Component {
     state = {
-        count: 0
+        count: 100,
+        imageUrl: "https://picsum.photos/200"
     };
     render() { 
         return (
         <div>
-        <h1>hello</h1>
+        <img src={this.state.imageUrl} alt=""/>
+        <span>{this.formatCount()}</span>
         <button>increase</button>
         </div>
         );
     }
+
+    formatCount()
+    {
+        
+    }
 }
+
+
  
 export default Counter;
