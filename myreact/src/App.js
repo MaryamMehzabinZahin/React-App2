@@ -2,20 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import User from './User';
+import Profile from './Profile'
 function App() {
-  const [data,setData]=useState(0);
-  function updateData()
-  {
-    setData(100)
-  }
-  console.warn("_____________");
+  
   return (
     <div className="App">
       <header className="App-header">
-       <h1> {data}</h1>
-       <button onClick={updateData} > Update</button>
-       <student name={data}/>
-      
+      <h1>conditional </h1>
+      <Profile/>
       </header>
     </div>
   );
