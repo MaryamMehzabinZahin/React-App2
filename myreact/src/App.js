@@ -6,7 +6,7 @@ function App() {
   const [data,setData]=useState(0);
   function updateData()
   {
-    setData(data+1)
+    setData(100)
   }
   console.warn("_____________");
   return (
@@ -14,6 +14,7 @@ function App() {
       <header className="App-header">
        <h1> {data}</h1>
        <button onClick={updateData} > Update</button>
+       <student name={data}/>
       
       </header>
     </div>
