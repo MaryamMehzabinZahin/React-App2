@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {Component} from 'react'
 
- function User() {
-  return (
-    <div>
-        <h1>hiiiiiiiiiii</h1>
-    </div>
-  )
+class User extends Component {
+    state = {  } 
+    render() { 
+        return (
+            <h1>userr</h1>
+        );
+    }
 }
+ 
 export default User;
